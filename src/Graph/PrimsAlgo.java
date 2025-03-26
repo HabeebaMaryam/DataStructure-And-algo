@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 public class PrimsAlgo {
+    static class Pair1{
+        int node;
+        int weight;
+        Pair1(int a , int b){
+            node = a;
+            weight = b;
+        }
+    }
     public static void prims(ArrayList<ArrayList<Pair1>> edges , int V){
         PriorityQueue<Pair> pq = new PriorityQueue<>((Pair x , Pair y) -> x.weight - y.weight)
 ;
@@ -52,14 +60,7 @@ public class PrimsAlgo {
         }
 
     }
-    static class Pair1{
-        int node;
-        int weight;
-        Pair1(int a , int b){
-            node = a;
-            weight = b;
-        }
-    }
+
 
     public static void main(String[] args) {
         int V = 5; // Number of vertices
