@@ -26,4 +26,5 @@ public class Lexicographical_Numbers {
             dfs(elem , t , ans);
         }
     }
+
 }
